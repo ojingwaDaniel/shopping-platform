@@ -39,5 +39,8 @@
 .subtitle {
       font-weight: lighter;
       font-size: 16px;
-} 
+}
+.large{
+    height: 380px;
+}
 
