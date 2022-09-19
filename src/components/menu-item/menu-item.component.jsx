@@ -2,9 +2,9 @@ import React from "react";
 import '../menu-item/menu-item.style.css'
 const MenuItem = ({ title, imageUrl, size }) => (
   <div className={`${size} menu-item`}>
-    <div
+    <div className="background-image"
       style={{
-        backgroundImage: `url(${imageUrl})`,
+        backgroundImage: `url(${imageUrl})`
       }}
     />
 
