@@ -1,5 +1,5 @@
 import React from "react";
-import './hompage.style.css'
+import "./hompage.style.css";
 const HomePage = () => (
   <div className="homepage">
     <div className="directory-menu">
@@ -36,4 +36,4 @@ const HomePage = () => (
     </div>
   </div>
 );
-export default HomePage
+export default HomePage;
