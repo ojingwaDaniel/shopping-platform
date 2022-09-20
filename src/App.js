@@ -1,6 +1,7 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
+
 import HomePage from './pages/homepage/homepage.component.jsx'
-import {Routes}  from 'react-router-dom';
 import './App.css';
 const HatPage = ()=>(
   <div>
@@ -11,8 +12,10 @@ const HatPage = ()=>(
 function App() {
   return (
     <div>
-      <Routes exact path="/" component={HomePage} />
-      <Routes path="/hats" component={HatPage}/>
+      <Routes>
+        <Route exact path="/" component = {HomePage} />
+        <Route path="/hats" component = {HatPage} />
+      </Routes>
     </div>
   );
 }
