@@ -14,10 +14,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* <Switch> */}
           <Route exact path="/" component={HomePage} />
           <Route path="/hats" component={HatPage} />
-        {/* </Switch> */}
 
       </BrowserRouter>
     </div>
