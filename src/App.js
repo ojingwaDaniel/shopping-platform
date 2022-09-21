@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 
 import HomePage from './pages/homepage/homepage.component.jsx'
@@ -14,10 +14,10 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Switch>
+        {/* <Switch> */}
           <Route exact path="/" component={HomePage} />
           <Route path="/hats" component={HatPage} />
-        </Switch>
+        {/* </Switch> */}
 
       </BrowserRouter>
     </div>
