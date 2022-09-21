@@ -7,4 +7,12 @@ class ShopPage extends React.Component{
           collections: ShopData
         };
     }
+    render(){
+        return(
+            <div>
+                <h1>SHOP PAGE</h1>
+            </div>
+        )
+    }
 }
+export default ShopPage
