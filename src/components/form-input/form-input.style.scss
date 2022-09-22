@@ -23,9 +23,8 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
-
-    &:focus {
-      outline: none;
+    &:focus{
+        outline: none;
     }
 
     &:focus ~ .form-input-label {
