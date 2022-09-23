@@ -1,5 +1,5 @@
 import firebase from "firebase/compat/app";
-import { getAuth} from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { initializeApp} from "firebase/app";
 
 
@@ -21,15 +21,8 @@ const firebaseApp = initializeApp(Config);
 
 
 export const auth = getAuth(firebaseApp);
-var provider = new firebase.auth.GoogleAuthProvider();
+var provider = new GoogleAuthProvider(firebaseApp);
 provider.addScope("profile");
 provider.addScope("email");
-export const  signInWithGoogle = ()=>firebase
-  .auth()
-  .signInWithPopup(provider)
-  .then(function (result) {
-    // This gives you a Google Access Token.
-    var token = result.credential.accessToken;
-    // The signed-in user info.
-    var user = result.user;
-  });
+export const  signInWithGoogle = ()=>firebase.auth().signInWithPopup(provider)
+  
