@@ -1,31 +1,19 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
-import { getAuth} from "firebase/auth";
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-
-
-
-
-
-const Config = {
-  apiKey: "AIzaSyB1AdwUG099kSzcmMLMXEqm7r908hIEEkY",
-  authDomain: "shopping-website-f1e24.firebaseapp.com",
-  projectId: "shopping-website-f1e24",
-  storageBucket: "shopping-website-f1e24.appspot.com",
-  messagingSenderId: "622263129431",
-  appId: "1:622263129431:web:7f16be4685d3beb6709a12",
-  measurementId: "G-LXY26CYWCR",
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDUJj8W_9YQ90pp_43o2NOPMZQ0mp6Tonw",
+  authDomain: "clothing-shopping-eb2c3.firebaseapp.com",
+  projectId: "clothing-shopping-eb2c3",
+  storageBucket: "clothing-shopping-eb2c3.appspot.com",
+  messagingSenderId: "808256614074",
+  appId: "1:808256614074:web:b0dca7fa944fba315e9c83",
 };
 
-const firebaseApp = initializeApp(Config);
-
-
-export const auth = getAuth(firebaseApp);
-export const firestore = getFirestore(firebaseApp)
-
-const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({prompt: "select_account" });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+ export const auth = getAuth(app)
