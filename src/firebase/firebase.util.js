@@ -12,6 +12,9 @@ const firebaseConfig = {
   measurementId: "G-N1Y82KLPTC",
 };
 export const userProfileDocument =  async (userAuth, additionalData)=> {
+  if (!userAuth) return;
+    
+  
   console.log(firestore.doc('users/nbnbvbvnmvvvvvvvbvv'))
 
 }
