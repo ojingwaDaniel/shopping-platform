@@ -6,7 +6,7 @@ import { auth, userProfileDocument } from "../../firebase/firebase.util";
 class SignUp extends React.Component {
   constructor() {
     super();
-    this.state = {
+    this.state= {
       displayName: "",
       email: "",
       password: "",
@@ -52,7 +52,7 @@ class SignUp extends React.Component {
       <div className="sign-up">
         <h1>i do not have an Account</h1>
         <span>Sign up with your Email and Password</span>
-        <form onSubmit={this.handleSubmit}>
+        <form action="" onSubmit={this.handleSubmit}>
           <FormInput
             type="text"
             label=" Display Name"
@@ -81,8 +81,8 @@ class SignUp extends React.Component {
             value={confirmPassword}
             name="confirmPassword"
           />
+          <CustomButton type="submit">SIGN UP</CustomButton>
         </form>
-        <CustomButton type='submit'>SIGN UP</CustomButton>
       </div>
     );
   }

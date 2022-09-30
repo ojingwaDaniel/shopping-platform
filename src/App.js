@@ -22,14 +22,16 @@ class App extends React.Component{
     if (usersData) {
     const userRef = await userProfileDocument(usersData);
     userRef.onSnapshot(snapshot=>{
-      this.setState({
-        currentUser : {
-          id : snapshot.id,
-          ...snapshot.data()
-        }
-        
-      })
-      console.log(this.state)
+      this.setState(
+        {
+          currentUser: {
+            id: snapshot.id,
+            ...snapshot.data(),
+          },
+        },
+        console.log(this.state)
+      );
+      
     })
       
     }else {
