@@ -81,7 +81,7 @@ class SignUp extends React.Component {
             value={confirmPassword}
             name="confirmPassword"
           />
-          <CustomButton type="submit">SIGN UP</CustomButton>
+          <CustomButton type = 'submit'>SIGN UP</CustomButton>
         </form>
       </div>
     );
