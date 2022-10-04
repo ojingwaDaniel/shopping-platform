@@ -27,7 +27,7 @@ export const  userProfileDocument = async (userAuth, additionalData)=>{
 
         })
       }catch(errors){
-        console.log('error creating user')
+        console.log('error creating user',errors.message)
       }
 
     }
