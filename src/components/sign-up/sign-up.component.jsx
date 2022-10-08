@@ -13,7 +13,7 @@ class SignUp extends React.Component {
       confirmPassword: "",
     };
   }
-  handleSubmit = async (event) => {
+  handleSubmit = async event=> {
     event.preventDefault();
     const { displayName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
@@ -21,11 +21,11 @@ class SignUp extends React.Component {
       return;
     }
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(
+      const {user} = await auth.createUserWithEmailAndPassword(
         email,
         password
       );
-      await userProfileDocument(user, displayName);
+      await userProfileDocument(user, {displayName});
       this.setState({
         displayName: "",
         email: "",
