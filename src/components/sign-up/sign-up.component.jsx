@@ -6,46 +6,41 @@ import { auth, userProfileDocument } from "../../firebase/firebase.util";
 class SignUp extends React.Component {
   constructor() {
     super();
-    this.state= {
+    this.state = {
       displayName: "",
       email: "",
       password: "",
-      confirmPassword : ""
+      confirmPassword: "",
     };
   }
-  handleSubmit = async event =>{
-    event.preventDefault()
-     const { displayName, email, password, confirmPassword } = this.state;
-     if (password !== confirmPassword){
-        alert('password does not match')
-        return
-     }
-     try {
-        const {user} = await auth.createUserWithEmailAndPassword(email,password)
-        await userProfileDocument(user,{displayName})
-       this.setState({
-         displayName: "",
-         email: "",
-         password: "",
-         confirmPassword: "",
-       });
-
-        
-     } catch (error) {
-        console.error(error)
-        
-     }
-
-
-    
-
-
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    const { displayName, email, password, confirmPassword } = this.state;
+    if (password !== confirmPassword) {
+      alert("password does not match");
+      return;
     }
-    handleChange = event=> {
-        const {name,value} = event.target
-        this.setState({[name]:value})
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+      await userProfileDocument(user, displayName);
+      this.setState({
+        displayName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
+    } catch (error) {
+      console.error(error);
     }
-  render(){
+  };
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+  render() {
     const { displayName, email, password, confirmPassword } = this.state;
 
     return (
@@ -81,10 +76,10 @@ class SignUp extends React.Component {
             value={confirmPassword}
             name="confirmPassword"
           />
-          <CustomButton type ='submit'>SIGN UP</CustomButton>
+          <CustomButton type="submit">SIGN UP</CustomButton>
         </form>
       </div>
     );
   }
 }
-export default SignUp
+export default SignUp;

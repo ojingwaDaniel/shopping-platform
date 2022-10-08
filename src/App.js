@@ -14,7 +14,6 @@ class App extends React.Component{
     this.state = {
       currentUser : null
     }
-
   }
   unSubscribeAuth = null
   componentDidMount(){
@@ -29,12 +28,15 @@ class App extends React.Component{
             ...snapshot.data()
           }
         }
-      );
+      )
       console.log(this.state)
      })
       
     }
     this.setState({ currentUser: usersAuth });
+
+
+    
   })
   
 }
