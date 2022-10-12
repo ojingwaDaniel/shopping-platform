@@ -24,11 +24,10 @@ class App extends React.Component{
             ...snapshot.data()
           
         })
-      console.log(this.state)
      })
       
     }
-    this.setState({ currentUser: usersAuth });
+    setCurrentUser(usersAuth );
 
 
     
@@ -41,7 +40,7 @@ class App extends React.Component{
   render(){
      return (
        <div>
-         <Header  />
+         <Header/>
          <Switch>
            <Route exact path="/" component={HomePage} />
            <Route exact path="/shop" component={ShopPage} />
@@ -54,11 +53,7 @@ class App extends React.Component{
  
 }
 const mapDispatchToProps = dispatch => ({
-  setCurrentUser : user => dispatch(setCurrentUser(user{
-  return {
-   
-}))
-
+  setCurrentUser : user => dispatch(setCurrentUser(user))
 })
 
-export default connect(null,mapDispatchToProps) (App);
+export default connect(null,mapDispatchToProps)(App);
