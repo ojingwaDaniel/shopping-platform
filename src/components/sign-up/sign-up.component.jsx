@@ -10,7 +10,7 @@ class SignUp extends React.Component {
       displayName: "",
       email: "",
       password: "",
-      confirmPassword: "",
+      confirmPassword: ""
     }
   }
   handleSubmit = async event=> {
@@ -33,12 +33,12 @@ class SignUp extends React.Component {
         confirmPassword: ""
       });
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
   };
   handleChange = (event) => {
     const { name, value } = event.target;
-    this.setState({[name]: value });
+    this.setState({[name]: value })
   };
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
