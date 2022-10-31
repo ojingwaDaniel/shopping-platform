@@ -27,9 +27,6 @@ class App extends React.Component{
       
     }
     setCurrentUser(usersAuth )
-
-
-    
   })
   
 }
