@@ -1,6 +1,6 @@
 import firebase from "firebase/compat/app";
-import "firebase/compat/auth"
-import "firebase/compat/firestore"
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD4t_b_JqbuxZehZHQbb6_wMFN3OVD1nEc",
@@ -11,6 +11,7 @@ const firebaseConfig = {
   appId: "1:465965338984:web:0c3b95e2ac592fe5fa46dd",
   measurementId: "G-N1Y82KLPTC",
 };
+
 export const  userProfileDocument = async (userAuth, additionalData)=>{
   if (!userAuth)return 
     const userRef = firestore.doc(`users/${userAuth.uid}`)
