@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo} from '../../assets/4.4 crown.svg.svg'
-import './header.style.scss'
+import './header.style.scss';
 import { auth } from "../../firebase/firebase.util";
 import { connect } from "react-redux";
 const Header = ({ currentUser }) => (
@@ -25,6 +25,7 @@ const Header = ({ currentUser }) => (
           SIGN IN
         </Link>
       )}
+      i
     </div>
   </div>
 );
