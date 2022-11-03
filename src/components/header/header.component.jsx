@@ -25,7 +25,7 @@ const Header = ({ currentUser }) => (
           SIGN IN
         </Link>
       )}
-      i
+      
     </div>
   </div>
 );
