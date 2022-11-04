@@ -4,6 +4,7 @@ import { ReactComponent as Logo} from '../../assets/4.4 crown.svg.svg'
 import './header.style.scss';
 import { auth } from "../../firebase/firebase.util";
 import { connect } from "react-redux";
+import CartIcon from '../cart.icon/cart.component';
 const Header = ({ currentUser }) => (
   <div className="header">
     <Link to="/" className="logo-container">
@@ -24,7 +25,9 @@ const Header = ({ currentUser }) => (
         <Link className="option" to="/signin">
           SIGN IN
         </Link>
+        
       )}
+      <CartIcon/>
       
       
     </div>
