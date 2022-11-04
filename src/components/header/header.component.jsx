@@ -26,6 +26,7 @@ const Header = ({ currentUser }) => (
         </Link>
       )}
       
+      
     </div>
   </div>
 );
