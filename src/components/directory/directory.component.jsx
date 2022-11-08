@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import "../directory/directory.style.css"
 import MenuItem from "../menu-item/menu-item.component"
 class Directory extends React.Component {
