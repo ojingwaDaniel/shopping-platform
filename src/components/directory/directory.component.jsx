@@ -48,7 +48,7 @@ class Directory extends React.Component {
           <MenuItem key={id} {...otherSections} />
         ))}
       </div>
-    );
+    )
   }
 }
 export default Directory;
