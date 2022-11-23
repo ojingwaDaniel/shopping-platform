@@ -1,3 +1,4 @@
+
 const INITIAL_STATE = {
     hidden : true
 }
@@ -9,6 +10,10 @@ const CartReducer = (state = INITIAL_STATE, action)=>{
             hidden : !state.hidden
 
         }
+        default:
+            return{
+                state
+            }
 
 
     }
