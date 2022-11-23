@@ -19,4 +19,4 @@ const CartReducer = (state = INITIAL_STATE, action)=>{
     }
     
 }
-export default CartRe
+export default CartRed
