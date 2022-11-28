@@ -5,7 +5,7 @@ import './header.style.scss'
 import { auth } from "../../firebase/firebase.util"
 import { connect } from "react-redux"
 import CartIcon from '../cart.icon/cart.component'
-import CartDropdown from "../cart.dropdown/cart.dropdown"
+import CartDropdown from "../cart.dropdown/cart.dropdown";
 const Header = ({ currentUser, hidden }) => (
   <div className="header">
     <Link to="/" className="logo-container">
