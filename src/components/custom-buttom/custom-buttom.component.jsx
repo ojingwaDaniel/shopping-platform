@@ -9,5 +9,5 @@ const CustomButton = ({ children, goggleButton, inverted, ...otherProps }) => (
   >
     {children}
   </button>
-);
+)
 export  default CustomButton;
