@@ -15,5 +15,5 @@ const CollectionItem = ({ imageUrl, id, name, price }) => (
     </div>
     <CustomButton inverted>ADD TO CHART</CustomButton>
   </div>
-)
+);
 export default CollectionItem;
