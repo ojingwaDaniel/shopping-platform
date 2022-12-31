@@ -6,7 +6,7 @@ import ShopPage from './pages/shop/shop.component.jsx'
 import SignInSignOutPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component.jsx';
 import './App.css';
 import { auth ,userProfileDocument} from './firebase/firebase.util';
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 import { setCurrentUser } from './redux/user/users.actions.js'
 
 
