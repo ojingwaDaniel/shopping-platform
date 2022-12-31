@@ -7,7 +7,7 @@ import SignInSignOutPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.c
 import './App.css';
 import { auth ,userProfileDocument} from './firebase/firebase.util';
 import { connect } from 'react-redux';
-import { setCurrentUser } from './redux/user/users.actions.js';
+import { setCurrentUser } from './redux/user/users.actions.js'
 
 
 class App extends React.Component{
