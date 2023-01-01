@@ -9,6 +9,14 @@ import { auth ,userProfileDocument} from './firebase/firebase.util'
 import { connect } from 'react-redux'
 import { setCurrentUser } from './redux/user/users.actions.js'
 
+      return {
+        ...state,
+        hidden: !state.hidden
+      }
+    case CartActionType.ADD_ITEMS:
+      return{
+        ...state,
+        cartItems:[...state.cartItems,action.payload
 
 class App extends React.Component{
   unSubscribeAuth = null
