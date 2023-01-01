@@ -1,6 +1,8 @@
 import React from "react";
 import "./collection.item.style.scss";
+import {connect} from 'react-redux'
 import CustomButton from "../custom-buttom/custom-buttom.component";
+import {addItem} from ''
 
 const CollectionItem = ({ imageUrl, id, name, price }) => (
   <div className="collection-item" key={id}>
@@ -17,4 +19,7 @@ const CollectionItem = ({ imageUrl, id, name, price }) => (
     <CustomButton inverted>ADD TO CHART</CustomButton>
   </div>
 );
-export default CollectionItem;
+const mapdDispatchToProps = dispatch=>(
+
+)
+export default connect() CollectionItem;
