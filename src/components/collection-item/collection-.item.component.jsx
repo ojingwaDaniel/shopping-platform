@@ -19,7 +19,9 @@ const CollectionItem = ({ imageUrl, id, name, price }) => (
     <CustomButton inverted>ADD TO CHART</CustomButton>
   </div>
 );
-const mapdDispatchToProps = dispatch=>(
+const mapdDispatchToProps = dispatch=>({
+  addItem : item => dispatch(addItem(item))
+}
 
 )
 export default connect() CollectionItem;
