@@ -24,4 +24,4 @@ const mapDispatchToProps = dispatch=>({
 }
 
 )
-export default connect() CollectionItem;
+export default connect(null,) CollectionItem;
