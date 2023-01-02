@@ -16,7 +16,7 @@ import { setCurrentUser } from './redux/user/users.actions.js'
     case CartActionType.ADD_ITEMS:
       return{
         ...state,
-        cartItems:[...state.cartItems,action.payload
+        cartItems:[...state.cartItems,action.payload]
 
 class App extends React.Component{
   unSubscribeAuth = null
