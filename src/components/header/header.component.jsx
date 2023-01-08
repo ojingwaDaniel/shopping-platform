@@ -20,7 +20,7 @@ const Header = ({ currentUser, hidden }) => (
       </Link>
       {currentUser ? (
         <div className="option" onClick={() => auth.signOut()}>
-          SIGN OUT
+          SIGN OUT 
         </div>
       ) : (
         <Link className="option" to="/signin">
@@ -40,4 +40,4 @@ const mapStateProps = ({user: {currentUser}, cart : {hidden}})=>({
   currentUser
 })
 
-export default connect(mapStateProps)(Header)
+export default connect(mapStateProps)(Header);
