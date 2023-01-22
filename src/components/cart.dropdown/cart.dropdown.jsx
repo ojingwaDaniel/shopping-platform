@@ -7,4 +7,4 @@ const CartDropdown = ()=>(
         <CustomButton>GO TO CHECKOUT</CustomButton>
     </div>
 )
-export default CartDropdown
+export default CartDropdown;
