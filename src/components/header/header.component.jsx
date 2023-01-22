@@ -25,14 +25,11 @@ const Header = ({ currentUser, hidden }) => (
       ) : (
         <Link className="option" to="/signin">
           SIGN IN
-        </Link>
-        
-      )}
+        </Link>)
+      }
       <CartIcon/>
-      { hidden ? null : <CartDropdown/>}
-      
-      
     </div>
+    { hidden ? null : <CartDropdown/>}
   </div>
 );
 const mapStateProps = ({user: {currentUser}, cart : {hidden}})=>({
