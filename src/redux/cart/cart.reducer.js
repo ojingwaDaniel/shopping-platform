@@ -3,12 +3,14 @@ const INITIAL_STATE = {
     hidden : true,
     cartItems: []
 }
-const CartReducer = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
+ 
+
+const CartReducer = (state = INITIAL_STATE,action)=>{
+  switch(action.type){
     case CartActionType.TOGGLE_CART_HIDDEN:
-      return {
+      return{
         ...state,
-        hidden: !state.hidden
+        hidden : !state.hidden
       }
     case CartActionType.ADD_ITEMS:
       return{
@@ -20,5 +22,6 @@ const CartReducer = (state = INITIAL_STATE, action) => {
         state
       };
   }
-};
+}
+
 export default CartReducer;
