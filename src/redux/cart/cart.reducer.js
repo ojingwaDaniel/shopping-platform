@@ -2,7 +2,7 @@ import CartActionType from "./cart.types";
 const INITIAL_STATE = {
     hidden : true,
     cartItems: []
-}
+};
  
 
 const CartReducer = (state = INITIAL_STATE,action)=>{
@@ -18,10 +18,8 @@ const CartReducer = (state = INITIAL_STATE,action)=>{
         cartItems:[...state.cartItems,action.payload]
       }  
     default:
-      return {
-        state
-      };
+      return state;
   }
-}
+};
 
 export default CartReducer;
