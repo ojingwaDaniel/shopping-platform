@@ -5,9 +5,9 @@ import CustomButton from "../custom-buttom/custom-buttom.component";
 import {addItem}from '../../redux/cart/cart.action'
  
 const CollectionItem = ({item,addItem}) => {
-  const {name,price,imageUrl,id} = item
+  const {name,price,imageUrl} = item
   return (
-  <div className="collection-item" key={id}>
+  <div className="collection-item">
     <div
       className="image"
       style={{
@@ -20,7 +20,8 @@ const CollectionItem = ({item,addItem}) => {
     </div>
     <CustomButton onClick = {()=> addItem(item)} inverted>ADD TO CHART</CustomButton>
   </div>
-)};
+  )
+};
 const mapDispatchToProps = dispatch=>({
   addItem : item => dispatch(addItem(item))
 });
