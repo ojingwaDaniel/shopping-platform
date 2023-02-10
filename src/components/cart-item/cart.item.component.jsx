@@ -8,4 +8,4 @@ const cartItem = ({item : {imageUrl,name,price,quantity}})=>(
             <spam className = 'price'>{quantity} x ${price}<spam/>
         <div/>
        <div/>
-)
+);
