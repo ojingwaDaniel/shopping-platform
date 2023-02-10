@@ -7,5 +7,5 @@ const cartItem = ({item : {imageUrl,name,price,quantity}})=>(
             <spam className = 'name'> {name}<spam/>
             <spam className = 'price'>{quantity} x ${price}<spam/>
         <div/>
-       </div>
+       <div/>
 )
