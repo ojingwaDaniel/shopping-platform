@@ -6,8 +6,6 @@ const cartItem = ({item : {imageUrl,name,price,quantity}})=>(
          <div className = 'item-details'>
             <spam className = 'name'> {name}<spam/>
             <spam className = 'price'>{quantity} x ${price}<spam/>
-            <div/>
+        <div/>
        </div>
 )
-   
-export default cartItem
