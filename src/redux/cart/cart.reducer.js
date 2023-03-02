@@ -23,4 +23,4 @@ const CartReducer = (state = INITIAL_STATE,action)=>{
   }
 }
 
-export default CartReducer
+export default CartReducer;
